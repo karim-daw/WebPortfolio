@@ -104,6 +104,10 @@ section {
   font-size: .85em;
 }
 
+.featured {
+  position: relative;
+}
+
 .featured-title {
   color: black;
   font-weight: bold;
@@ -118,5 +122,16 @@ section {
   font-size: 0.9em;
   line-height: 2.0em;
   font-weight: 500;
+}
+
+.skills {
+  background-color: #F4F4F4;
+}
+
+.skills-container ul li {
+  background: white;
+  padding: 2em;
+  border-radius: 1em;
+  margin-bottom: 1em;
 }
 /*# sourceMappingURL=main.css.map */
