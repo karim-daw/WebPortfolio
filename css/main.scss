@@ -97,7 +97,14 @@ section {
 
 .featured {
     position: relative;
+    padding: 2em;
 }
+
+.featured img {
+    width: 400px;
+}
+
+
 
 .featured-title {
     color: black;
@@ -127,4 +134,82 @@ section {
     margin-bottom: 1em;
 }
 
+.icon-container {
+    height: 100px;
+    display: grid;
+    place-content: center;
+    margin: 0 auto;
+
+    &.one {
+        width: 50px;
+    }
+
+    &.two {
+        width: 100px;
+    }
+
+    &.three {
+        width: 60px;
+    }
+}
+
+.skill-title {
+    font-weight: bold;
+}
+
+.featured-desc {
+    margin-bottom: 2em;
+}
+
+.portfolio {
+    background-color: white;
+}
+
+// selecting from portoflio contain and a link img inside of it
+.portfolio-container a img {
+    border-radius: 1em;
+    margin-right: 2em;
+    margin-left: 2em;
+    margin-bottom: 2em; 
+    width: 400px;  
+}
+
+// media query
+
+@media only screen and (min-width:800px) {
+    .featured-desc, .portfolio {
+        text-align: left;
+    }
+    .featured, .portfolio-container {
+        display: grid;
+        grid-template-columns: 40% auto;
+    }
+
+    .left, .portfolio-left {
+        display: grid;
+        place-content: center;
+    }
+    
+    .skills {
+        padding-top: 7em;
+    }
+    
+    .skills-container ul {
+        display: grid;
+        grid-template-columns: repeat(3,auto);
+        grid-gap: 2em;
+    }
+
+    .portfolio {
+        padding-top: 7em;
+        padding-right: 5em;
+        padding-left: 2em;
+    }
+
+    .portfolio-container img {
+        margin-left: 2em;
+        margin-right: 10em;
+    }
+
+}
 
