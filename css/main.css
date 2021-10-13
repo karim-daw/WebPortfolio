@@ -34,7 +34,7 @@ header {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding: 3em;
+  padding: 4em;
 }
 
 header .logo {
@@ -112,6 +112,7 @@ section {
 
 .featured img {
   width: 400px;
+  border-radius: 1em;
 }
 
 .featured-title {
@@ -140,6 +141,7 @@ section {
   padding: 2em;
   border-radius: 1em;
   margin-bottom: 1em;
+  margin-bottom: 2em;
 }
 
 .icon-container {
@@ -185,8 +187,6 @@ section {
 @media only screen and (min-width: 800px) {
   .featured, .portfolio {
     text-align: left;
-    padding-left: 2em;
-    padding-right: 5em;
   }
   .featured, .portfolio-container {
     display: -ms-grid;
@@ -212,16 +212,89 @@ section {
     display: grid;
     -ms-grid-columns: (auto)[3];
         grid-template-columns: repeat(3, auto);
-    grid-gap: 2em;
+    grid-gap: 1em;
   }
   .portfolio {
     padding-top: 7em;
-    padding-right: 5em;
-    padding-left: 2em;
   }
   .portfolio-container img {
     margin-left: 2em;
     margin-right: 10em;
+  }
+}
+
+@media only screen and (min-width: 1050px) {
+  .hero {
+    height: 90vh;
+  }
+  .nav-container {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (auto)[2];
+        grid-template-columns: repeat(2, auto);
+  }
+  .nav-container header {
+    background: #F4F4F4;
+  }
+  header {
+    padding: 4em 4em 4em 4em;
+  }
+  .social-header {
+    padding: 4em 4em 4em 0;
+  }
+  section {
+    padding: 4em;
+  }
+  .social-header {
+    display: block;
+    background: #F4F4F4;
+  }
+  .social-header ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 7em;
+    float: right;
+  }
+  .social-header ul img {
+    width: 20px;
+  }
+  .portfolio img {
+    float: right;
+    max-width: 500px;
+  }
+}
+
+@media only screen and (min-width: 1250px) {
+  header {
+    padding: 4em 4em 4em 10em;
+  }
+  .social-header {
+    padding: 4em 10em 4em 0;
+  }
+  section {
+    padding: 10em 10em 4em 10em;
+  }
+  .hero .content {
+    padding: 6em 8em 6em 10em;
+  }
+}
+
+@media only screen and (min-width: 1550px) {
+  header {
+    padding: 4em 4em 4em 10em;
+  }
+  .social-header {
+    padding: 4em 20em 4em 0;
+  }
+  section {
+    padding: 10em 20em 4em 10em;
+  }
+  .hero .content {
+    padding: 9em 20em 6em 10em;
   }
 }
 /*# sourceMappingURL=main.css.map */
